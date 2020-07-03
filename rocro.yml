@@ -28,6 +28,7 @@ inspecode:
     thresholds: { num-issues: 999 }
 
   jshint:
+    #config-file: .jshintrc  # (auto-detected)
     thresholds: { num-issues: 999 }
 
   misspell:
@@ -41,10 +42,19 @@ inspecode:
     thresholds: { num-issues: 999 }
 
   phpcs:
+    options:
+      --exclude:
+      - PEAR.WhiteSpace.ScopeIndent
     auto-fix: true
     thresholds: { num-issues: 999 }
 
   pmd:
+  - thresholds: { num-issues: 999 }
+  - machine: { cpu: 1.0 }
+    thresholds: { num-issues: 999 }
+  - machine: { cpu: 1.1 }
+    thresholds: { num-issues: 999 }
+  - machine: { cpu: 1.5 }
     thresholds: { num-issues: 999 }
 
   prettier:
