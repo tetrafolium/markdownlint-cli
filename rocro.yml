@@ -1,69 +1,11 @@
 inspecode:
 
-  clang-format:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
-
-  cpd:
-    options: [ --skip-lexical-errors ]
-    thresholds: { num-issues: 999 }
-
-  eslint:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
-
-  flow:
-    thresholds: { num-issues: 999 }
-
-  #fortify:
-  #  thresholds: { num-issues: 999 }
-
-  fossology:
-    thresholds: { num-issues: 999 }
-
-  grep:
-    thresholds: { num-issues: 999 }
-
-  jscpd:
-    thresholds: { num-issues: 999 }
-
-  jshint:
-    #config-file: .jshintrc  # (auto-detected)
-    thresholds: { num-issues: 999 }
-
-  misspell:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
-
-  npm-audit:
-    thresholds: { num-issues: 999 }
-
-  npm-test:
-    thresholds: { num-issues: 999 }
-
-  phpcs:
-    options:
-      --exclude:
-      - PEAR.WhiteSpace.ScopeIndent
-    auto-fix: true
-    thresholds: { num-issues: 999 }
-
   pmd:
-  - thresholds: { num-issues: 999 }
   - machine: { cpu: 1.0 }
     thresholds: { num-issues: 999 }
+    ### java.lang.OutOfMemoryError: Java heap space (codelift#1754)
   - machine: { cpu: 1.1 }
     thresholds: { num-issues: 999 }
-  - machine: { cpu: 1.5 }
-    thresholds: { num-issues: 999 }
-
-  prettier:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
-
-  #understand:
-  #  thresholds: { num-issues: 999 }
-
-  unused:
-    options: [ --single-occurrence, --all-likelihoods ]
+    ### /opt/pmd/pmd-bin-6.18.0/bin/run.sh: line 218:   191 Killed                  java ${HEAPSIZE} ${PMD_JAVA_OPTS} $(jre_specific_vm_options) -cp "${classpath}" "${CLASSNAME}" "$@"
+  - ignore: 'test/'
     thresholds: { num-issues: 999 }
