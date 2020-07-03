@@ -113,10 +113,8 @@ MIT © Igor Shubovych
 
 [travis-badge]: https://img.shields.io/travis/igorshubovych/markdownlint-cli/master.svg?label=linux
 [travis-url]: https://travis-ci.org/igorshubovych/markdownlint-cli
-
 [appveyor-badge]: https://img.shields.io/appveyor/ci/igorshubovych/markdownlint-cli/master.svg?label=windows
 [appveyor-url]: https://ci.appveyor.com/project/igorshubovych/markdownlint-cli
-
 [markdownlint]: https://github.com/DavidAnson/markdownlint
 [rules]: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
 [config]: https://github.com/DavidAnson/markdownlint#optionsconfig
